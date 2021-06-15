@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#164659"
+    tools:context=".splash">
+
+    <ImageView
+        android:id="@+id/cube1"
+        android:layout_width="313dp"
+        android:layout_height="265dp"
+        android:background="#164659"
+        android:layout_marginTop="320px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cube1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cube1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101px"
+        android:fontFamily="@font/rubik_mono_one"
+        android:text="QUIZ"
+        android:textSize="80dp"
+        android:textColor="#fff"/>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questions">
+
+    <TextView
+        android:id="@+id/question"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#164659"
+        android:textColor="#fff" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20px"
+        android:layout_height="270dp"
+        android:layout_below="@+id/question" >
+
+        <RadioButton
+            android:id="@+id/opt_a"
+            android:checked="false"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:background="@drawable/opt_background"
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/opt_b"
+            android:checked="false"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textSize="24dp"
+            android:textColor="#fff"
+            android:background="@drawable/opt_background"
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/opt_c"
+            android:checked="false"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textSize="24dp"
+            android:background="@drawable/opt_background"
+            android:textColor="#fff"
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/opt_d"
+            android:checked="false"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textSize="24dp"
+            android:textColor="#fff"
+            android:layout_marginTop="40px"
+            android:background="@drawable/opt_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/nextQuestion"
+        android:layout_marginHorizontal="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="next question"
+        android:layout_marginTop="220dp"
+        android:layout_below="@+id/question" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_marginHorizontal="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="quit"
+        android:layout_below="@+id/nextQuestion" />
+
+    <TextView
+        android:id="@+id/tvscore"
+        android:textColor="#164659"
+        android:layout_marginTop="10dp"
+        android:textSize="3mm"
+        android:text="Your Score:"
+        android:layout_marginLeft="2mm"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quit" />
+
+    <TextView
+        android:id="@+id/n_score"
+        android:textColor="#164659"
+        android:layout_marginTop="10dp"
+        android:textSize="3mm"
+        android:text="0"
+        android:layout_marginRight="2mm"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quit" />
+</RelativeLayout>
